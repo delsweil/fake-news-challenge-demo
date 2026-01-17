@@ -1,20 +1,23 @@
-import os, json
+import json
+import os
 
-STIM_DIR = "public/stimuli"
-OUT_FILE = "stimuli_manifest.json"
+# Files live here in the repo:
+STIM_FS_DIR = "public/stimuli"
+
+# But in the browser they are served from:
+STIM_URL_PREFIX = "stimuli"
+
+OUTFILE = "stimuli_manifest.json"
+EXTS = (".png", ".jpg", ".jpeg", ".webp")
 
 def main():
     files = []
-    for name in os.listdir(STIM_DIR):
-        low = name.lower()
-        if low.endswith((".png", ".jpg", ".jpeg", ".webp")):
-            files.append(f"{STIM_DIR}/{name}")
-
-    files.sort()
-    with open(OUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(files, f, ensure_ascii=False, indent=2)
-
-    print(f"Wrote {OUT_FILE} with {len(files)} files.")
+    for name in sorted(os.listdir(STIM_FS_DIR)):
+        if name.lower().endswith(EXTS):
+            files.append(f"{STIM_URL_PREFIX}/{name}")
+    with open(OUTFILE, "w", encoding="utf-8") as f:
+        json.dump(files, f, indent=2)
+    print(f"Wrote {OUTFILE} with {len(files)} files.")
 
 if __name__ == "__main__":
     main()
