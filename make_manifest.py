@@ -1,6 +1,6 @@
 import os, json
 
-STIM_DIR = "stimuli"
+STIM_DIR = "public/stimuli"
 OUT_FILE = "stimuli_manifest.json"
 
 def main():
