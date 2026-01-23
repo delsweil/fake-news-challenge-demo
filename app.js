@@ -713,7 +713,7 @@ function renderResult4(){
         <div class="box">
           <div class="small">
             <b>This game is inspired by an excellent Bachelor’s thesis by Tanja Holtermann.</b>
-            In her thesis, she studied how people judge the credibility of online news —
+            In her thesis, which was co-supervised by Professors David Elsweiler (Information Science) and Gregor Volberg (Psychology) she studied how people judge the credibility of online news —
             and how those judgments are influenced by <b>language quality</b> and <b>visual design</b>.
           </div>
 
