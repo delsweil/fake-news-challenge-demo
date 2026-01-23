@@ -702,22 +702,75 @@ function renderResult4(){
     <div class="card">
       <div class="header">
         <div>
-          <div class="title">🔍 WHAT RESEARCH SHOWS</div>
-          <div class="sub">Why this game exists</div>
+          <div class="title">🎓 FROM THESIS TO GAME</div>
+          <div class="sub">This demo is inspired by real research in Information Science</div>
         </div>
-        <div class="pill">Open Day Demo</div>
+        <div class="pill">Open Day Demo </div>
       </div>
 
       <div class="content">
+        
         <div class="box">
           <div class="small">
-            • Most people are only slightly better than chance at spotting fake news.<br/><br/>
-            • Professional language can make fake news seem more credible.<br/><br/>
-            • Visual design matters less than many people expect — but it can still mislead.
+            <b>This game is inspired by an excellent Bachelor’s thesis by Tanja Holtermann.</b>
+            In her thesis, she studied how people judge the credibility of online news —
+            and how those judgments are influenced by <b>language quality</b> and <b>visual design</b>.
           </div>
+
           <div class="hr"></div>
+
           <div class="small">
-            Want to try again and see how your dot moves?
+            <b>What the thesis did (in a carefully controlled experiment):</b><br/>
+            • Systematically varied <b>veracity</b> (true vs. false), <b>linguistic quality</b> (low vs. high), and <b>visual quality</b> (low vs. high)<br/>
+            • Collected credibility ratings and decision behaviour from <b>~150 participants</b><br/>
+            • Analysed the data using <b>statistical modelling techniques</b>
+          </div>
+
+          <div class="hr"></div>
+
+          <!-- Findings (full width) -->
+          <div class="box" style="margin:0; width:100%;">
+            <h3>Main findings</h3>
+            <div class="small">
+              • <b>True</b> articles were rated as more credible than <b>false</b> articles.<br/>
+              • <b>High-quality language</b> increased perceived credibility strongly.<br/>
+              • <b>High-quality design</b> also increased credibility — but typically less than language.<br/>
+              • This matters because <b>fake news can “benefit” from polished writing and design</b>.
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <!-- Figure (full width, below) -->
+          <div class="box" style="margin:0; width:100%;">
+            <h3>One key figure from the thesis</h3>
+            <div class="small" style="margin-bottom:12px;">
+              Credibility ratings split by <b>veracity</b>, <b>linguistic quality</b>, and <b>visual quality</b>.
+              The figure below is replotted faithfully from the original thesis data.
+            </div>
+
+            <div style="width:100%; padding:14px; border-radius:16px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08);">
+              <img
+                src="assets/figure3.png"
+                alt="Figure 3: Credibility ratings by veracity, linguistic quality, and visual quality"
+                style="display:block; width:100%; height:auto; border-radius:14px;"
+                onerror="this.onerror=null; this.alt='Figure not found (check assets/figure3.png)'; this.src='';"
+              />
+            </div>
+
+            <div class="note" style="margin-top:12px;">
+              <b>Takeaway:</b> higher language quality and higher visual quality both push credibility ratings upward —
+              <b>even when the story itself is false</b>.
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="small">
+            <b>What you can learn in Information Science:</b><br/>
+            • Designing experiments and collecting behavioural data<br/>
+            • Working with real-world misinformation scenarios<br/>
+            • Analysing results using statistical and computational methods
           </div>
         </div>
 
@@ -729,6 +782,10 @@ function renderResult4(){
     </div>
   `);
 }
+
+
+
+
 
 // ---------- Boot: load manifest ----------
 async function boot(){
