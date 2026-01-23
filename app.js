@@ -268,12 +268,12 @@ function renderIntro(){
       <div class="content">
         <div class="row">
           <div class="col">
-            <div class="big">Can you spot it?</div>
+            <div class="big">Can you spot Fake News?</div>
             <div class="kpi">
-              <span>🧩 6 rounds</span>
-              <span>⏱️ We track time</span>
-              <span>🧠 You’ll get a “decision style”</span>
-              <span>📚 No story repeats</span>
+              <span>📰 6 articles</span>
+              <span>⏱️ Time is tracked</span>
+              <span>🧠 We will analyse your checking style!”</span>
+              
             </div>
             <div class="hr"></div>
             <div class="small">Device plays (for comparisons): <b>${runs.length}</b></div>
