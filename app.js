@@ -343,7 +343,7 @@ function renderPlay(){
           </div>
 
           <div class="progress"><div style="width:${pct}%;"></div></div>
-          <div class="note">File: <b>${stim.id}</b></div>
+         
         </div>
       </div>
     </div>
